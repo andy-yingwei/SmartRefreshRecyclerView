@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.mysmartrefreshrecyclerview'
-    compileSdk 36   // ✅ 必须 ≥ 36（解决 androidx.core 要求）
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.example.mysmartrefreshrecyclerview"
@@ -38,6 +38,6 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 
-    // ✅ 使用 JitPack 远程依赖（不是本地模块）
-    implementation 'com.github.andy-yingwei:SmartRefreshRecyclerView:v1.0.0'
+    // ✅ 本地测试时用（JitPack 构建时不会用到）
+    implementation project(':SmartRefreshRecyclerView')
 }
