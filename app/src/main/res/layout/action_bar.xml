@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+操作按钮栏
+可以添加到主布局中
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/srr_colorPrimary"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:text="刷新"
+        android:textSize="12sp"
+        android:onClick="onMenuClick" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:text="清空"
+        android:textSize="12sp"
+        android:onClick="onMenuClick" />
+
+    <Button
+        android:id="@+id/btn_add_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:text="添加数据"
+        android:textSize="12sp"
+        android:onClick="onMenuClick" />
+
+    <Button
+        android:id="@+id/btn_simulate_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="2dp"
+        android:text="模拟错误"
+        android:textSize="12sp"
+        android:onClick="onMenuClick" />
+
+</LinearLayout>

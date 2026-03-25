@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+加载更多底部布局
+显示加载更多状态：正常/加载中/无更多数据/错误
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/srr_colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上拉加载更多"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginStart="8dp" />
+
+</LinearLayout>

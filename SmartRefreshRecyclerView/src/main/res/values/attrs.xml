@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SmartRefreshRecyclerView自定义属性声明-->
+    <!-- 注意：所有资源名称都必须以 srr_ 开头 -->
+    <declare-styleable name="SrrSmartRefreshRecyclerView" format="reference">
+        <!--是否启用下拉刷新类型：boolean默认值：true 说明：控制下拉刷新功能的开关 -->
+        <attr name="srr_enableRefresh" format="boolean" />
+
+        <!--是否启用上拉加载类型：boolean 默认值：false  说明：控制上拉加载更多功能的开关 -->
+        <attr name="srr_enableLoadMore" format="boolean" />
+
+        <!--布局管理器类型类型：enum 可选值：linear(0), grid(1), staggered(2) 默认值：linear 说明：控制RecyclerView的布局类型 -->
+        <attr name="srr_layoutManagerType" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="grid" value="1" />
+            <enum name="staggered" value="2" />
+        </attr>
+
+        <!-- 布局方向 类型：enum 可选值：vertical(1), horizontal(0) 默认值：vertical 说明：控制列表的滚动方向 注意：RecyclerView.VERTICAL=1, RecyclerView.HORIZONTAL=0 -->
+        <attr name="srr_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <!--网格/瀑布流列数类型：integer默认值：2说明：当layoutManagerType为grid或staggered时生效-->
+        <attr name="srr_spanCount" format="integer" />
+
+        <!-- 刷新行为属性 -->
+
+        <!--是否启用下拉即刷新模式类型：boolean默认值：false 说明：true=下拉即刷新，false=释放刷新 -->
+        <attr name="srr_pullToRefresh" format="boolean" />
+
+        <!-- 触发刷新的头部高度比例 类型：float 默认值：1.2 说明：头部下拉多少倍高度触发刷新  -->
+        <attr name="srr_ratioOfHeaderHeightToRefresh" format="float" />
+
+        <!-- 自定义状态视图属性  -->
+
+        <!-- 自定义加载中布局 类型：reference 说明：自定义加载中状态的布局文件 -->
+        <attr name="srr_loadingLayout" format="reference" />
+
+        <!-- 自定义空数据布局 类型：reference 说明：自定义空数据状态的布局文件 -->
+        <attr name="srr_emptyLayout" format="reference" />
+
+        <!-- 自定义错误布局 类型：reference 说明：自定义错误状态的布局文件 -->
+        <attr name="srr_errorLayout" format="reference" />
+
+        <!-- 背景颜色 类型：color 默认值：transparent -->
+        <attr name="srr_backgroundColor" format="color" />
+
+        <!-- 背景drawable 类型：reference -->
+        <attr name="srr_background" format="reference" />
+
+        <!-- 分割线颜色 类型：color 默认值：#EEEEEE -->
+        <attr name="srr_dividerColor" format="color" />
+
+    </declare-styleable>
+</resources>
+
+
+

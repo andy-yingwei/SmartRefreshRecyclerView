@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 下拉刷新容器 -->
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptr_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <!-- 内容容器（包含RecyclerView和状态视图） -->
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <!-- 状态视图容器（覆盖在RecyclerView上面） -->
+            <FrameLayout
+                android:id="@+id/state_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</FrameLayout>

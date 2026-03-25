@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:visibility="gone"
+    android:padding="40dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/srr_ic_error"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载失败"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="点击重试"
+        android:textSize="14sp"
+        android:textColor="@color/srr_colorPrimary"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground" />
+
+</LinearLayout>

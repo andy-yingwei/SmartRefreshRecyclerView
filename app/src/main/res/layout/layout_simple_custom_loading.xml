@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#E8F5E9">
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <!-- 添加明显的标识文字 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="🔥 自定义加载中视图 🔥"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="(绿色背景，红色文字)"
+        android:textColor="#2E7D32" />
+
+</LinearLayout>
